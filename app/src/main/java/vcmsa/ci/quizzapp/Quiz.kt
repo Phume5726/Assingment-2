@@ -9,6 +9,21 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Quiz : AppCompatActivity() {
+    private val historyquestions = arrayOf(
+        "World War II began in 1939 when Germany invaded Poland.",
+        "Apartheid laws in South Africa gave all citizens equal rights regardless of race.",
+        "The Berlin Wall was built to stop East Germans from fleeing to West Berlin.",
+        "The Soviet Union collapsed because it was defeated in a war by the United States.",
+        "Nelson Mandela was imprisoned for over 20 years for fighting against apartheid."
+    )
+    private val correctAnswers = booleanArrayOf(
+        true,   // WWII began in 1939...
+        false,  // Apartheid laws...
+        true,   // Berlin Wall...
+        false,  // Soviet Union collapsed...
+        true    // Nelson Mandela...
+    )
+    private var currentQuestionIndex = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,6 +36,10 @@ class Quiz : AppCompatActivity() {
         val btnTrue = findViewById<Button>(R.id.btnTrue)
         val btnFalse = findViewById<Button>(R.id.btnFalse)
         val btnNext = findViewById<Button>(R.id.btnNext)
+        val tvQuestions = findViewById<TextView>(R.id.tvQuestions)
+        val tvQuiz = findViewById<TextView>(R.id.tvQuiz)
+
+
 
     }
 }
