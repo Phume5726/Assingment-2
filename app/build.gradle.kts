@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "vcmsa.ci.quizzapp"
+    namespace = "vcmsa.ci.quizzapp2"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "vcmsa.ci.quizzapp"
+        applicationId = "vcmsa.ci.quizzapp2"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
